@@ -7,7 +7,29 @@
 
 <body>
   <h1>Express</h1>
-  <p>Welcome to Express</p>
+  <div>
+    <form method="GET" action="/ldap/bind">
+      <table>
+        <tr>
+          <td>URL:</td>
+          <td><input type="text" name="url" /></td>
+        </tr>
+        <tr>
+          <td>User:</td>
+          <td><input type="text" name="user" /></td>
+        </tr>
+        <tr>
+          <td>Pass:</td>
+          <td><input type="password" name="pass" /></td>
+        </tr>
+        <tr>
+          <td>Binding:</td>
+          <td><input type="text" name="bind" /></td>
+        </tr>
+      </table>
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </body>
 
 </html>
