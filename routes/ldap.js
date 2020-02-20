@@ -14,7 +14,6 @@ router.get('/bind', function (req, res) {
         console.log('second')
         client.bind(dn, pass, function (err, ldapRes) {
             console.log('third')
-            assert.ifError(err);
             res.send(ldapRes);
         });
 
