@@ -58,11 +58,9 @@ router.get('/bind', function (req, res) {
 
 router.get('/essam', function (req, res) {
     try {
-        var ldap = require('ldapjs');
-        var assert = require('assert');
 
         // user input
-        var uids = process.argv.slice(2);
+        var uids = ['esabbagh','jszczyg2'];
 
 
         var url = 'ldaps://fds.ford.com:636';
