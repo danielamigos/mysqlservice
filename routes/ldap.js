@@ -74,7 +74,9 @@ router.get('/essam', function (req, res) {
 
 
         var baseDn = 'OU=Employee,OU=People,O=ford,C=US';
-        var filter = '(|' + uids.map((u) => '(uid=' + u + ')').join('') + ')';
+        // var filter = '(|' + uids.map((u) => '(uid=' + u + ')').join('') + ')';
+        var filter = '(&(objectClass=User))'
+        console.log(filter);
         var opts = {
             filter: filter,
             scope: 'sub',
