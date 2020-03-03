@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node --max-old-space-size=4096 ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
+    "csv-stringify": "^5.3.6",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "ldapjs": "^1.0.2",
